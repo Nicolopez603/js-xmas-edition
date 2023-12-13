@@ -20,15 +20,21 @@ function validarNombre(nombre) {
 }
 
 function validarCiudad(ciudad) {
-    if (ciudad.lenght === numeroMinimoCaracteres) {
-        return 'Debe seleccionar una ciudad'
+    if (ciudad.lenght === 0) {
+        return 'El campo ciudad no puede estar vacio'
     }
     return ''
 }
 
 function validarDescripcionRegalo(descripcionRegalo) {
+    const numeroMaximoCaracteres = 100
     if (descripcionRegalo.lenght === numeroMinimoCaracteres) {
         return 'Debe ingresar la descripcion del regalo'
     }
+
+    if (descripcionRegalo.lenght === numeroMaximoCaracteres) {
+        return 'La descripcion es muy larga, restalé caracteres'
+    }
+
     return ''
 }

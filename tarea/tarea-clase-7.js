@@ -8,7 +8,7 @@
 
 function probarValidarCiudad() {
     console.assert(
-        validarCiudad('') === 'Debe seleccionar una ciudad',
+        validarCiudad('') === 'Selecciona...',
         'Error: Este campo detectó que no se seleccionó ninguna ciudad, ingrese la ciudad'
     )
 }
